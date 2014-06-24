@@ -1,0 +1,161 @@
+{
+	"name":"square",
+	"thumbnail":"square.png",
+	"screenshot":"square.png",
+	"templateType":"Standard Template",
+        "pageTypes": [
+        "home"
+    ],
+        "images":[
+        "images/gallery/1.jpg",
+        "images/gallery/2.jpg",
+        "images/gallery/3.jpg",
+        "images/gallery/4.jpg",
+        "images/gallery/5.jpg",
+        "images/gallery/6.jpg",
+        "images/gallery/7.jpg",
+        "images/gallery/8.jpg",
+        "images/gallery/9.jpg"
+    ],
+    "tags": {
+    "en": ["clean", "technology", "white", "modern", "professional", "simple", "photography", "sans serif"],
+    "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
+    "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estúdio", "website", "criativo", "elegante", "profissional", "único", "mídia", "sans-serif"]
+    },
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#dadada",
+            "color3":"#d48d8d",
+            "color4":"#d48d8d",
+            "color5":"#000000",
+            "color6":"#000000",
+            "color7":"#f5f5f5"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#dadada",
+            "color3":"#841c2f",
+            "color4":"#841c2f",
+            "color5":"#3c4a55",
+            "color6":"#841c2f",
+            "color7":"#000000"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#dadada",
+            "color3":"#4F7391",
+            "color4":"#4F7391",
+            "color5":"#3c4a55",
+            "color6":"#4F7391",
+            "color7":"#000000"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#dadada",
+            "color3":"#73AD5C",
+            "color4":"#73AD5C",
+            "color5":"#757575",
+            "color6":"#73AD5C",
+            "color7":"#000000"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#dadada",
+            "color3":"#4BA5A1",
+            "color4":"#4BA5A1",
+            "color5":"#3c4a55",
+            "color6":"#4BA5A1",
+            "color7":"#000000"
+        }
+    },
+    "fontSwatch": {
+       "title": "Ubuntu",
+        "font1": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "30px",
+            "font-weight": "700",
+            "line-height": "38px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "26px",
+            "font-weight": "700",
+            "line-height": "42px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "20px",
+            "font-weight": "700",
+            "line-height": "24px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "18px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "color-hover": "@color-swatch1",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "@color-swatch2"
+         },
+        "font7": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "14px",
+            "font-weight": "300",
+            "line-height": "24px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch7"
+        },
+        "font8": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "@color-swatch5",
+            "letter-spacing": "3px"
+        },
+        "font9": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "22px",
+            "color": "darken(@color-swatch7,15%)",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
+            "font-size": "38px",
+            "font-weight": "400",
+            "line-height": "48px",
+            "color": "@color-swatch5",
+            "letter-spacing": "6px"
+        }
+    }
+}

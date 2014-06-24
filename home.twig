@@ -1,0 +1,46 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+<div class="navbar">
+    {{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+</div>
+
+<header class="bk-header clearfix">
+      <div class="headerwrapper clearfix">
+            <div class="header-center clearfix">
+                {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+                {{widget('companyname', 'companyname', {"business": "SELECTION"})|raw}}
+            </div>
+       </div>
+  </header>
+
+{{widget('feature', 'thisunqiuewidgetname', {"header": "CREATIVE IDEAS", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '0','showBtn': true})|raw}}
+
+<div class="page-wrap">
+    <section class="bk-section">
+        {{widget('gallery', 'gallery', {'showDescription': true, 'showTitle': true, 'images':[{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/1.jpg'), 'title':'Image 1', 'description': 'This is image 1'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/2.jpg'), 'title':'Image 2', 'description': 'This is image 2'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/3.jpg'), 'title':'Image 3', 'description': 'This is image 3'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/4.jpg'), 'title':'Image 4', 'description': 'This is image 4'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/5.jpg'), 'title':'Image 5', 'description': 'This is image 5'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/6.jpg'), 'title':'Image 6', 'description': 'This is image 6'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/7.jpg'), 'title':'Image 7', 'description': 'This is image 7'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/8.jpg'), 'title':'Image 8', 'description': 'This is image 8'},{'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/9.jpg'), 'title':'Image 9', 'description': 'This is image 9'}]})|raw}}
+    </div>
+    <div class="mainzone page-wrap">
+	     {{zone('main')|raw}}
+    </div>
+</div>
+
+<div class="above-wrap">
+    <div class="above-footer headerwrapper">
+        {{widget('profile', 'socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+</div>
+
+<footer class="bk-footer">
+	   <div class="footer-border headerwrapper">
+            <div class="left">
+                {{widget('companyname', 'thisunqiuewidgetname1', {"business": "SELECTION"})|raw}}
+          </div>
+          <div class="right">
+                {{widget('profile', 'headercolumn1profileCopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}} 
+          </div>
+	   </div>
+</footer>
+
+{% endblock %}
