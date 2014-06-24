@@ -162,9 +162,13 @@ header.bk-header {
 	text-align:center;
 }
 
-    .widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
-        height:200px;
-    }
+.widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
+    height:200px;
+}
+
+.widget.feature h3 {
+    color:lighten(@font-swatch5-color,70%);
+}
 
 /*	===============================
 	Extended Navigation
@@ -1039,13 +1043,21 @@ footer .widget.profile .bk-profile-socialicons span a {
 		width:60%;
 	}
 	.menu-subsection-header h2, .ecom-productlist-info h2 {
-		font-size: bkscale(@font-swatch2-font-size, 0.7);
-        line-height: bkscale(@font-swatch2-line-height, 0.7);
+		font-size: bkscale(@font-swatch2-font-size, 0.9);
+        line-height: bkscale(@font-swatch2-line-height, 0.9);
 	}
 	.widget.companyname a {
 		font-size: bkscale(@font-swatch2-font-size, 1.2);
         line-height: bkscale(@font-swatch2-line-height, 0.8);
 	}
+    .widget.feature h2 {
+        font-size: bkscale(@font-swatch2-font-size, 0.8);
+        line-height: bkscale(@font-swatch2-line-height, 0.8);
+    }
+    .widget.feature h3 {
+        font-size: bkscale(@font-swatch2-font-size, 0.6);
+        line-height: bkscale(@font-swatch2-line-height, 0.6);
+    }
 	.widget.ecomcheckout table tr td .checkout-quantitybtn span {
 		width: 30px;
 	}

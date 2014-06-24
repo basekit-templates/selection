@@ -1,7 +1,7 @@
 {
-	"name":"square",
-	"thumbnail":"square.png",
-	"screenshot":"square.png",
+	"name":"selection",
+	"thumbnail":"selection.png",
+	"screenshot":"selection.png",
 	"templateType":"Standard Template",
         "pageTypes": [
         "home"
@@ -71,7 +71,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Ubuntu",
+       "title": "Raleway",
         "font1": {
             "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
             "font-size": "30px",
@@ -145,7 +145,7 @@
             "font-family": "\"Raleway\", \"Helvetica\", Arial, sans-serif",
             "font-size": "16px",
             "font-weight": "300",
-            "line-height": "22px",
+            "line-height": "26px",
             "color": "darken(@color-swatch7,15%)",
             "letter-spacing": "inherit"
         },
