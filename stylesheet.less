@@ -167,11 +167,16 @@ header.bk-header {
 }
 
 .widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
-    height:200px;
+    height:220px;
 }
 
 .widget.feature h3 {
     color:lighten(@font-swatch5-color,70%);
+}
+
+.widget.feature .feature-bgimg .content button:hover {
+    background-color: @color-swatch5;
+    color: @font-swatch6-color;
 }
 
 /*	===============================
@@ -323,6 +328,14 @@ header.bk-header {
     padding: 20px;
     border:1px solid darken(@color-swatch1,15%);
     width:100%;
+}
+
+.blog-post-category {
+    padding:0;
+}
+
+.blog-post-body {
+    padding: 0px 40px 0px;
 }
 
 /*	===============================
@@ -601,6 +614,10 @@ hr.line {
     border:1px solid darken(@color-swatch1,15%);
 }
 
+.widget.twitter .twitter-profile-pic {
+    height:100px;
+}
+
 /*	===============================
 	Ecom
 	=============================== */
@@ -740,17 +757,15 @@ select::-ms-expand {
     padding: 20px;
 }
 
-.form-group.productlist-search input {
-    height:39px;
-}
-
 .widget.ecomfeaturedproducts .ecom-featuredproducts-wrap .ecom-featuredproducts-product, .widget.ecomproductslist .ecom-productslist-product {
     border:1px solid darken(@color-swatch1,15%);
     padding: 20px;
 }
 
 .form-group.productlist-search input {
-    border-radius:0;
+    height: 39px;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 /* ===============================
