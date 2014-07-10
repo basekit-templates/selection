@@ -412,19 +412,18 @@ header.bk-header {
 	font-size: @font-swatch7-font-size;
     margin-top:10px;
     &:hover {
-        background-color:darken(@color-swatch4,5%);
+        background-color:darken(@color-swatch3,5%);
     }
 }
 
-.widget.ecomcheckout .checkout-order-button,  
-.widget.profile form button, 
+.widget.ecomcheckout .checkout-order-button, 
 .signupform fieldset button, 
 .blog-search-submit-button, 
 .widget.button button, button.btn {
 	background-color:@color-swatch4;
     color:@font-swatch6-color;
     &:hover {
-        background-color:darken(@color-swatch4,5%);
+        background-color:darken(@color-swatch3,5%);
     }
 }
 
@@ -434,16 +433,17 @@ header.bk-header {
 	background-color:@color-swatch4;
 	color:@font-swatch6-color;
     &:hover{
-        background-color:darken(@color-swatch4,10%);
+        background-color:darken(@color-swatch3,5%);
     }
 }
 .widget.profile form button {
 	padding: 10px 14px 8px;
+    border:1px solid @color-swatch1;
 }
 
 .widget.profile form button:hover {
     color:@font-swatch6-color;
-    background-color:darken(@color-swatch4,10%);
+    background-color:darken(@color-swatch3,5%);
 }
 
 .btn {
@@ -452,7 +452,7 @@ header.bk-header {
 
 .widget.button button {
 	&:hover{
-		background-color:darken(@color-swatch4,5%);
+		background-color:darken(@color-swatch3,5%);
 		color:@font-swatch6-color;
 	}
 }
@@ -465,7 +465,7 @@ header.bk-header {
 	display: table;
     padding:8px 25px;
     &:hover {
-        background-color:darken(@color-swatch3,10%);
+        background-color:darken(@color-swatch3,5%);
         color:@font-swatch6-color;
     }
 }
@@ -486,6 +486,14 @@ button.btn {
         &:hover {
              background-color:darken(@color-swatch4,5%);
         }
+}
+
+.widget.ecombasket .ecombasket-pull {
+    background-color:@color-swatch3;
+}
+
+.widget.ecombasket .ecombasket-pull:hover {
+    background-color:darken(@color-swatch3,5%);
 }
 
 /*	===============================
@@ -929,11 +937,13 @@ footer .widget.profile .bk-profile-socialicons span a {
 
 .left .widget.profile, .footer-border .left {
     float:left;
+    max-width:50%;
 }
 
 .footer-border .right {
     padding-top:10px;
     float:right;
+    max-width:50%;
 }
 
 .left .widget.companyname a {
