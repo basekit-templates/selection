@@ -730,8 +730,9 @@ select::-ms-expand {
 .ecom-product-go-to-checkout-btn {
 	margin-top:20px;
 	padding-top:13px;
+    background-color:@color-swatch3;
 	&:hover{
-		background-color:@color-swatch7;
+		background-color:darken(@color-swatch3,5%);
 		text-decoration: none;
 	}
 }
@@ -785,6 +786,22 @@ select::-ms-expand {
 
 .widget.ecomproductslist .productlist-filter {
     margin-bottom:20px;
+}
+
+.delivery, .widget.ecomcheckout table {
+    margin-bottom:20px;
+}
+
+.checkout-legal-links {
+    margin-top:15px;
+}
+
+.checkout-empty-link btn {
+    padding-top:10px;
+}
+
+.checkout-total-amount {
+    padding:20px 0px;
 }
 
 /* ===============================
