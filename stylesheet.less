@@ -206,7 +206,9 @@ header.bk-header {
 }
 
 .widget .extendednavigation ul li.folder:after {
-	border-top-color:lighten(@color-swatch3,15%);
+	border-top-color: @color-swatch1;
+    right:15px;
+    top:48%;
 }
 
 .widget .extendednavigation ul li a {
@@ -215,14 +217,6 @@ header.bk-header {
 
 .widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
 	padding:20px 20px;
-}
-
-.widget .extendednavigation ul li.folder:after {
-	top:48%;
-}
-
-.widget .extendednavigation ul li.folder:after {
-    border-top-color: @color-swatch1;
 }
 
 .widget .extendednavigation ul li a:hover, .widget .extendednavigation ul li.folder .text:hover {
@@ -270,10 +264,6 @@ header.bk-header {
     margin-left:0;
 }
 
-.widget.gallery ul {
-	margin-bottom:30px;
-}
-
 .widget.gallery ul li {
 	width: 33.33%;
 	padding-bottom:33.33%;
@@ -311,6 +301,10 @@ header.bk-header {
 	padding:0px 40px;
 }
 
+.blog-post-summary {
+    margin-bottom:3px;
+}
+
 .blog-post-item.has-image {
 	padding-bottom: 45px;
     border:1px solid darken(@color-swatch1,15%);
@@ -336,6 +330,10 @@ header.bk-header {
 
 .blog-post-body {
     padding: 0px 40px 0px;
+}
+
+.blog-post-publish-date, .blog-post-category {
+    padding:0px 0px 0px 40px;
 }
 
 /*	===============================
@@ -395,6 +393,10 @@ header.bk-header {
 	font-weight:@font-swatch10-font-weight;
 }
 
+.menu-info {
+    margin-top:20px;
+}
+
 /*	===============================
 	BUTTONS
 	=============================== */
@@ -439,6 +441,7 @@ header.bk-header {
 .widget.profile form button {
 	padding: 10px 14px 8px;
     border:1px solid @color-swatch1;
+    background-color:transparent;
 }
 
 .widget.profile form button:hover {
@@ -626,6 +629,10 @@ hr.line {
     height:100px;
 }
 
+.widget.contactform, .widget.signupform, .widget.signupform, .widget.twitter, .widget.map {
+    margin-bottom:10px;
+}
+
 /*	===============================
 	Ecom
 	=============================== */
@@ -774,6 +781,10 @@ select::-ms-expand {
     height: 39px;
     -webkit-appearance: none;
     border-radius: 0;
+}
+
+.widget.ecomproductslist .productlist-filter {
+    margin-bottom:20px;
 }
 
 /* ===============================
@@ -941,7 +952,6 @@ footer .widget.profile .bk-profile-socialicons span a {
 }
 
 .footer-border .right {
-    padding-top:10px;
     float:right;
     max-width:50%;
 }
@@ -1072,6 +1082,13 @@ footer .widget.profile .bk-profile-socialicons span a {
     footer.bk-footer {
         padding: 10px 0px 30px;
     }
+    .left .widget.profile, .footer-border .left {
+        max-width:100%;
+    }
+
+    .footer-border .right {
+        max-width:100%;
+    }   
 }	
 
 @media only screen and (max-width: 480px) {
