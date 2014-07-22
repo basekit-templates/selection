@@ -176,7 +176,7 @@ header.bk-header {
 
 .widget.feature .feature-bgimg .content button:hover {
     background-color: @color-swatch5;
-    color: @font-swatch6-color;
+    color: @font-swatch7-color;
 }
 
 /*	===============================
@@ -297,8 +297,12 @@ header.bk-header {
 	padding:40px 40px 0px;
 }
 
-.blog-post-summary, .blog-post-more-link, .blog-post-published-date, .blog-post-content, .blog-post-category-label, .blog-post-tags {
+.blog-post-summary, .blog-post-more-link, .blog-post-published-date, .blog-post-content, .blog-post-tags {
 	padding:0px 40px;
+}
+
+.blog-post-category-label {
+    padding:0px 0px 0px 40px;
 }
 
 .blog-post-summary {
@@ -332,8 +336,12 @@ header.bk-header {
     padding: 0px 40px 0px;
 }
 
-.blog-post-publish-date, .blog-post-category {
+.blog-post-publish-date {
     padding:0px 0px 0px 40px;
+}
+
+.blog-post-sharing {
+    margin: 20px 40px 0px 40px;
 }
 
 /*	===============================
@@ -403,12 +411,12 @@ header.bk-header {
 
 .blog-search-submit-button {
 	padding:7px 14px 5px 14px;
-	background-color:@color-swatch4;
+	background-color:@color-swatch3;
 	border:0;
 	margin-bottom:10px;
 	font-family:@font-swatch7-font-family; 
 	font-weight: @font-swatch7-font-weight; 
-	color:@font-swatch6-color; 
+	color:@font-swatch7-color; 
 	line-height:@font-swatch7-line-height; 
 	letter-spacing: @font-swatch7-letter-spacing; 
 	font-size: @font-swatch7-font-size;
@@ -422,8 +430,8 @@ header.bk-header {
 .signupform fieldset button, 
 .blog-search-submit-button, 
 .widget.button button, button.btn {
-	background-color:@color-swatch4;
-    color:@font-swatch6-color;
+	background-color:@color-swatch3;
+    color:@font-swatch7-color;
     &:hover {
         background-color:darken(@color-swatch3,5%);
     }
@@ -432,8 +440,8 @@ header.bk-header {
 .widget.paypalbuynow .widget.button.paypal, 
 .widget.tweet a, 
 .widget.dropbox button, .widget.socialicons span a {
-	background-color:@color-swatch4;
-	color:@font-swatch6-color;
+	background-color:@color-swatch3;
+	color:@font-swatch7-color;
     &:hover{
         background-color:darken(@color-swatch3,5%);
     }
@@ -445,7 +453,7 @@ header.bk-header {
 }
 
 .widget.profile form button:hover {
-    color:@font-swatch6-color;
+    color:@font-swatch7-color;
     background-color:darken(@color-swatch3,5%);
 }
 
@@ -456,12 +464,12 @@ header.bk-header {
 .widget.button button {
 	&:hover{
 		background-color:darken(@color-swatch3,5%);
-		color:@font-swatch6-color;
+		color:@font-swatch7-color;
 	}
 }
 
 .contactform button.btn {
-    color:@font-swatch6-color!important;
+    color:@font-swatch7-color!important;
     border:1px solid darken(@color-swatch1,15%);
     background-color:@color-swatch3;
 	margin: 0px auto;
@@ -469,7 +477,7 @@ header.bk-header {
     padding:8px 25px;
     &:hover {
         background-color:darken(@color-swatch3,5%);
-        color:@font-swatch6-color;
+        color:@font-swatch7-color;
     }
 }
 
@@ -497,6 +505,10 @@ button.btn {
 
 .widget.ecombasket .ecombasket-pull:hover {
     background-color:darken(@color-swatch3,5%);
+}
+
+.checkout-empty-link.btn {
+    color:@font-swatch7-color;
 }
 
 
@@ -610,8 +622,8 @@ textarea.message {
     background-color:@color-swatch3;
 }
 
-.widget.profile .bk-profile-socialicons span a:hover {
-	background-color:darken(@color-swatch4,5%);
+.widget.profile .bk-profile-socialicons span a:hover, button.btn:hover, .form-group.productlist-search button.btn:hover {
+	background-color:darken(@color-swatch3,5%);
 }
 
 .twitter ul li a {
@@ -799,7 +811,7 @@ select::-ms-expand {
 }
 
 .widget.ecomcheckout table tr td .checkout-quantitybtn button {
-    color:@font-swatch10-color;
+    color:@font-swatch7-color;
     &:hover {
         background-color:darken(@color-swatch4,5%);
     }
