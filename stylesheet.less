@@ -256,17 +256,54 @@ header.bk-header {
 }
 
 
-/* ===============================
-   FEATURE = gallery widget
-   =============================== */
+// -----------------------------
+// Gallery
+// -----------------------------
 
 .widget.gallery {
-    margin-left:0;
-}
-
-.widget.gallery ul li {
-	width: 33.33%;
-	padding-bottom:33.33%;
+    margin: 20px 0 20px -0.5%;
+    ul li {
+        @media @tablet {
+            width: 50%;
+            padding-bottom: 50%;
+        }
+        @media @mobile {
+            width: 100%;
+            padding-bottom: 100%;
+        }
+        span.inner {
+            .title,
+            .description {
+                // Font
+                color: @color-swatch1;
+                font-family: @font-swatch4-font-family;
+                letter-spacing: @font-swatch4-letter-spacing;
+                text-align: left;
+            }
+            .title {
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 26px;
+            }
+            .description {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    // Image Data
+    .image-data {
+        display: block;
+        opacity: 0;
+        background-color: @color-swatch3;
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 /*	===============================
@@ -457,6 +494,10 @@ header.bk-header {
     background-color:darken(@color-swatch3,5%);
 }
 
+.right label {
+    background-color:@color-swatch1;
+}
+
 .btn {
 	padding: 5px 14px 10px;
 }
@@ -543,8 +584,12 @@ button.btn {
     width: 270px;
 }
 
+
 .widget.profile form fieldset input {
     border:1px solid @color-swatch1;
+    background-color:@color-swatch1;
+    text-indent:3px;
+    border-radius:0;
 }
 
 .widget.signupform {
@@ -573,7 +618,6 @@ label {
 	=============================== */
 
 input, 
-.widget.profile form fieldset input, 
 .signupform fieldset input, 
 .widget.contactform form fieldset textarea, 
 .widget.contactform form fieldset input  {
@@ -618,12 +662,24 @@ textarea.message {
 	height:200px;
 }
 
+// -----------------------------
+// SOCIAL ICONS
+// -----------------------------
+
 .widget.profile .bk-profile-socialicons span a {
     background-color:@color-swatch3;
 }
 
 .widget.profile .bk-profile-socialicons span a:hover, button.btn:hover, .form-group.productlist-search button.btn:hover {
 	background-color:darken(@color-swatch3,5%);
+}
+
+.widget.socialicons, .widget.profile .bk-profile-socialicons {
+  min-height:32px;
+}
+
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+  text-align:center;
 }
 
 .twitter ul li a {
@@ -649,12 +705,12 @@ hr.line {
     border:1px solid darken(@color-swatch1,15%);
 }
 
-.widget.twitter .twitter-profile-pic {
-    height:100px;
-}
-
 .widget.contactform, .widget.signupform, .widget.signupform, .widget.twitter, .widget.map {
     margin-bottom:10px;
+}
+
+.widget.twitter .twitter-content span.bk-full-name {
+    line-height:60px;
 }
 
 /*	===============================
