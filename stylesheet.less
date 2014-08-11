@@ -897,19 +897,16 @@ select::-ms-expand {
 }
 
 .widget.ecomcheckout table tr td .checkout-quantitybtn button {
-    background-color:@color-swatch4;
+    background-color:@color-swatch3;
+    color:@font-swatch7-color;
+    &:hover {
+        background-color:darken(@color-swatch3,5%);
+    }
 }
 
 .delivery, .widget.ecomcheckout table {
     padding:20px;
     border:1px solid darken(@color-swatch1,15%);
-}
-
-.widget.ecomcheckout table tr td .checkout-quantitybtn button {
-    color:@font-swatch7-color;
-    &:hover {
-        background-color:darken(@color-swatch4,5%);
-    }
 }
 
 .widget.ecomproductslist .productlist-filter {
@@ -956,7 +953,7 @@ select::-ms-expand {
 
 // Ecom Basket Summary
 
-.ecombasketsummary a, .ecombasket .ecombasket-pull p {
+.ecombasket .ecombasket-pull p {
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
   font-weight: @font-swatch7-font-weight;
@@ -965,7 +962,14 @@ select::-ms-expand {
   }
 }
 
+.basket-summary-product-info a {
+  font-family: @font-swatch4-font-family;
+  font-size: @font-swatch4-font-size;
+  font-weight: @font-swatch4-font-weight;
+}
+
 .widget.ecombasketsummary {
+    margin-top:20px;
   table {
     border-spacing: 0;
     width: 100%;
@@ -976,6 +980,7 @@ select::-ms-expand {
     background-color:transparent;
     margin: 20px 0 30px;
     border: 1px solid darken(@color-swatch1,10%);
+    padding-top:20px;
     @media @mobile {
       padding: 0px;
     }
@@ -996,6 +1001,7 @@ select::-ms-expand {
             text-transform: uppercase;
             @media @mobile {
                 font-size: 12px;
+                display: none!important;
             }
       @media @mobile {
         font-size: 12px;
@@ -1099,7 +1105,7 @@ select::-ms-expand {
       padding: 1px 25px 6px;
       margin: -6px;
             @media @mobile {
-        padding: 2px 10px 6px;
+        padding: 0px 10px 5px;
       }
         }
         button {
@@ -1108,10 +1114,10 @@ select::-ms-expand {
       color:@color-swatch1;
       background-color:@color-swatch3;
             @media @mobile {
-        padding:6px 6px;
+        padding:7px 8px;
       }
       &:hover {
-        background-color:lighten(@color-swatch3,10%);
+        background-color:darken(@color-swatch3,5%);
       }
         }
       }
@@ -1131,12 +1137,30 @@ select::-ms-expand {
   }
 }
 
-.basket-summary-submit, .basket-summary-empty-cta {
+.basket-summary-submit {
   display: inline-block;
   padding: 0 12px;
   line-height: 45px;
   height: 45px;
   font-weight: @font-swatch7-font-weight;
+}
+
+.basket-summary-empty-cta.btn {
+    background-color:@color-swatch3;
+    text-decoration: none;
+    padding:12px 15px;
+    &:hover {
+        background-color:darken(@color-swatch3,5%);
+    }
+}
+
+.basket-summary-legal-links {
+    padding-top:10px;
+    list-style: none;
+    padding-left:0;
+    &:hover {
+        text-decoration:underline!important;
+    }
 }
 
 /* ===============================
@@ -1452,6 +1476,10 @@ footer.bk-footer .widget.companyname a {
     }
     .widget .extendednavigation ul li.folder {
         padding:10px 0px;
+    }
+    .widget.ecomcheckout table tr td .checkout-quantitybtn button {
+        width: 35px;
+        height: 35px;
     }
 }	
 
