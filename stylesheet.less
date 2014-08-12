@@ -952,37 +952,47 @@ select::-ms-expand {
     margin-bottom:5px;
 } 
 
+.ecombasket .ecombasket-pull p:hover {
+    background-color:transparent!important;
+}
+
 // Ecom Basket Summary
+
+.ecombasketsummary a {
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight: @font-swatch7-font-weight;
+}
+
+.basket-summary-product-info a {
+  font-family: @font-swatch6-font-family;
+  font-size: @font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+}
 
 .ecombasket .ecombasket-pull p {
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
-  font-weight: @font-swatch7-font-weight;
   &:hover {
-    text-decoration: none;
+    background-color:@color-swatch3;
   }
 }
 
-.basket-summary-product-info a {
-  font-family: @font-swatch4-font-family;
-  font-size: @font-swatch4-font-size;
-  font-weight: @font-swatch4-font-weight;
-}
-
 .widget.ecombasketsummary {
-    margin-top:20px;
+    padding-top:20px;
   table {
     border-spacing: 0;
     width: 100%;
     list-style: none;
     font-size: 18px;
     color: @color-swatch4;
-    padding:30px;
-    background-color:transparent;
     margin: 20px 0 30px;
-    border: 1px solid darken(@color-swatch1,10%);
+    @media @tablet {
+      padding: 0px;
+    }
     @media @mobile {
       padding: 0px;
+      margin:0px 0px 30px 0px;
     }
     tr:first-child { 
             outline: 1px solid darken(@color-swatch1,10%);
@@ -1030,6 +1040,9 @@ select::-ms-expand {
             &:nth-child(2) {
                 padding: 20px;
                 vertical-align: top;
+                @media @mobile {
+                    padding:20px 0px;
+                }
             }
             &:nth-child(2) {
                 @media (max-width: 530px) {
@@ -1068,10 +1081,14 @@ select::-ms-expand {
                 margin-top: 0;
                 padding-top: 0;
             }
-        }
+}
     .basket-summary-items {
       background: transparent;
-      @media @mobile {
+      @media @tablet {
+                img {
+            max-width:100px!important;
+        }
+              @media @mobile {
                 img {
             max-width:80px!important;
         }
@@ -1080,6 +1097,7 @@ select::-ms-expand {
           display: block;
         }
       }
+  }
       &:last-child {
         td {
           padding-bottom: 25px;
@@ -1094,29 +1112,38 @@ select::-ms-expand {
       .basket-summary-pricepu, .basket-summary-quantity, .basket-summary-amount {
         font-size: @font-swatch5-font-size;
         line-height: @font-swatch5-line-height;
+        label {
+            display:block;
+        }
       }
       .basket-summary-pricepu {
         display: block;
       }
+      .basket-summary-quantity {
+        margin-top: 4px;
+      }
       .basket-summary-quantity, .basket-summary-quantitybtn {
         display: inline-block;
+        label {
+            display:block;
+        }
         span {
-        padding: 1px 25px 6px;
-        margin: -6px;
-            @media @mobile {
-        padding: 0px 10px 5px;
-      }
+        padding: 5px 25px 6px;
+        margin: 0;
+        position: relative;
+        top: -2px;
         }
         button {
-            padding:8px 10px;
-      border:0;
-      color:@color-swatch1;
-      background-color:@color-swatch3;
-            @media @mobile {
-        padding:7px 8px;
-      }
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            box-shadow: none;
+            border:0;
+            color:@color-swatch1;
+            background-color:@color-swatch3;
+            margin: 0;
       &:hover {
-        background-color:darken(@color-swatch3,5%);
+        background-color:darken(@color-swatch3,10%);
       }
         }
       }
@@ -1130,12 +1157,14 @@ select::-ms-expand {
       font-size: bkscale(@font-swatch5-font-size, 1.05);
       line-height: bkscale(@font-swatch5-font-size, 1.1);
       margin-top: 25px;
+      border:2px solid @color-swatch7;
       padding:20px;
+      font-weight:700;
     }
   }
 }
 
-.basket-summary-submit {
+.basket-summary-submit, .basket-summary-empty-cta {
   display: inline-block;
   padding: 0 12px;
   line-height: 45px;
@@ -1146,9 +1175,8 @@ select::-ms-expand {
 .basket-summary-empty-cta.btn {
     background-color:@color-swatch3;
     text-decoration: none;
-    padding:12px 15px;
     &:hover {
-        background-color:darken(@color-swatch3,5%);
+        background-color:@color-swatch7;
     }
 }
 
