@@ -2,7 +2,7 @@
 	"name":"selection",
 	"thumbnail":"selection.png",
 	"screenshot":"selection.png",
-	"templateType":"Standard Template",
+    "templateType":"standard",
         "pageTypes": [
         "home"
     ],
