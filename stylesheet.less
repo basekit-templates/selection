@@ -182,7 +182,7 @@ header.bk-header {
 
 .navbar {
 	background-color:@color-swatch3;
-	padding:10px 0px 40px;
+	padding:20px 0px;
 }
 
 .widget.extendednavigation {
@@ -225,11 +225,15 @@ header.bk-header {
     color:darken(@font-swatch6-color,10%);
 }
 
+.widget .extendednavigation ul li.folder {
+    margin:0;
+}
+
 .widget .extendednavigation a.pull {
     display:inline-block;
     position: absolute;
     right: 0;
-    top:0;
+    top:-15px;
     width: 40px;
     height: 40px;
     border: none;
@@ -255,6 +259,15 @@ header.bk-header {
     margin: 0px auto;
     display: table;
     left: 0;
+}
+
+.widget .extendednavigation ul.align-right li.folder:after {
+    left: 5px;
+    right: inherit;
+}
+
+.widget.extendednavigation li:hover > ul > li > a {
+    padding-right:10px;
 }
 
 
@@ -1468,11 +1481,10 @@ footer.bk-footer .widget.companyname a {
 	.widget .extendednavigation a.pull {
 		width: 35px;
 		height: 31px;
-		top: 0px;
+		top: -15px;
         width: 100%;
         margin: 0px auto;
         display: table;
-        top: 0;
         z-index: 9999;
 	}
 	.bk-footer .contactform input, .bk-footer .contactform textarea {
