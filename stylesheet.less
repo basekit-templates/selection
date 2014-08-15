@@ -206,7 +206,7 @@ header.bk-header {
 
 .widget .extendednavigation ul li.folder:after {
 	border-top-color: @color-swatch1;
-    right:15px;
+    right:20px;
     top:48%;
 }
 
@@ -263,7 +263,7 @@ header.bk-header {
 }
 
 .widget .extendednavigation ul.align-right li.folder:after {
-    left: 5px;
+    left: 20px;
     right: inherit;
 }
 
@@ -876,35 +876,13 @@ select::-ms-expand {
 	padding-top:10px;
 }
 
-.widget.ecomproduct {
-    clear: both;
-    .ecom-product {
-        .ecom-product-images-container {
-            width: 55%;
-            float: left;
-            margin-bottom: 1em;
-            @media @tablet {
-                width:100%;
-            }
-        }
-        .ecom-product-preview-image-wrap {
-            height: 410px;
-            margin-top: 8px;
-            margin-bottom: 1em;
-            background-position: center center;
-            background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            overflow: hidden;
-            -webkit-box-shadow: 2px 2px 0 1px #D9D9D9;
-            box-shadow: 2px 2px 0 1px #D9D9D9;
-            img {
-                display: none;
-            }
-        }
-    }
+@supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+  .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, 
+  select,
+  .svg .widget.ecomproduct .ecom-product .ecom-product-info .ecom-product-variation select, 
+  .svg select {
+    background-image: none;
+  }
 }
 
 .widget.ecomcheckout table tr td .checkout-quantitybtn button {
@@ -1482,7 +1460,7 @@ footer.bk-footer .widget.companyname a {
 	.widget .extendednavigation a.pull {
 		width: 35px;
 		height: 31px;
-		top: -15px;
+		top: 0;
         width: 100%;
         margin: 0px auto;
         display: table;
@@ -1503,7 +1481,7 @@ footer.bk-footer .widget.companyname a {
 		z-index:9999;
 	}
 	.widget .extendednavigation ul li a {
-		padding:0 20px;
+		padding:10px 20px;
 	}
 	.widget.profile span, .widget.profile a, .widget.profile p {
 		margin:0px auto;
@@ -1533,9 +1511,6 @@ footer.bk-footer .widget.companyname a {
     .footer-border .right {
         max-width:100%;
     }   
-    .widget .extendednavigation ul li a {
-        padding:10px 0px;
-    }
     .widget .extendednavigation ul li.folder {
         padding:10px 0px;
     }
@@ -1636,7 +1611,7 @@ footer.bk-footer .widget.companyname a {
         padding:0;
     }
     .widget .extendednavigation ul li a {
-        padding:5px 0px;
+        padding:5px 20px;
     }
     .widget .extendednavigation ul li.folder {
         padding:5px 0px;
