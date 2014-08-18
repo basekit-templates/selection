@@ -176,45 +176,45 @@ header.bk-header {
     color: @font-swatch7-color;
 }
 
-/*	===============================
-	Extended Navigation
-	=============================== */
+/*  ===============================
+    Extended Navigation
+    =============================== */
 
 .navbar {
-	background-color:@color-swatch3;
-	padding:20px 0px;
+    background-color:@color-swatch3;
+    padding:20px 0px;
 }
 
 .widget.extendednavigation {
-	position: relative;
-	width: 100%;
-	ul {
-		display:none;
-        width:100%;
-        padding-top:40px;
+    position: relative;
+    width: 100%;
+    ul {
+        display: none;
+        width: 100%;
+        padding-top: 40px;
         background-color:@color-swatch3;
         li {
             width: 100%;
         }
-	}
+    }
 }
 
 .widget .extendednavigation ul li:hover ul {
-	background-color:darken(@color-swatch4,5%);
+    background-color:darken(@color-swatch4,5%);
 }
 
 .widget .extendednavigation ul li.folder:after {
-	border-top-color: @color-swatch1;
+    border-top-color: @color-swatch1;
     right:20px;
     top:48%;
 }
 
 .widget .extendednavigation ul li a {
-	padding: 10px 20px;
+    padding: 10px 20px;
 }
 
 .widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
-	padding:10px 20px;
+    padding:10px 20px;
 }
 
     .widget .extendednavigation ul li.folder {
@@ -246,8 +246,10 @@ header.bk-header {
 }
 
 .widget .extendednavigation a.pull:after {
-    background-image: image('/images/nav-icon.png');
-    background-repeat:no-repeat;
+    background-color: transparent;
+    box-shadow: none;
+    background: image('/images/nav-icon.png');
+    background-repeat :no-repeat;
     content: '';
     position: absolute;
     width: 40px;
@@ -1435,74 +1437,72 @@ footer.bk-footer .widget.companyname a {
 }
 
 @media only screen and (max-width: 768px) {
+    .widget .extendednavigation ul li:hover ul {
+        margin-top: 6px;
+    }
 	.widget .extendednavigation ul li {
-		border:0;
+        border:0;
         padding:0;
-	}
-	.widget.extendednavigation {
-		width:100%;
-        top: -13px;
-	}
-	.widget.extendednavigation .bk-overlay {
-		width: 100%;
-		left: inherit !important;
-	}
-	.widget .extendednavigation ul {
-		padding-top: 50px;
-	}
-	.widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
-		padding:0 20px;
-	}
-	select {
-		width:100%;
-	}
-	.widget.responsiveslideshow .slideshow-widget .btn-play {
-		width: 12%;
-		left: 0;
-	}
-	.wrapper {
-		width: 90%;
-		padding: 30px 5%;
-	}
-	.signupform fieldset input {
-		width: 100%;
-	}
-	.widget .extendednavigation a.pull {
-		width: 35px;
-		height: 31px;
-		top: 0;
+    }
+    .widget.extendednavigation {
+        width:100%;
+    }
+    .widget.extendednavigation .bk-overlay {
+        width: 100%;
+        left: inherit !important;
+    }
+    .widget .extendednavigation > ul > li > a, .widget .extendednavigation ul li.folder > .text {
+        padding:0 20px;
+    }
+    select {
+        width:100%;
+    }
+    .widget.responsiveslideshow .slideshow-widget .btn-play {
+        width: 12%;
+        left: 0;
+    }
+    .wrapper {
+        width: 90%;
+        padding: 30px 5%;
+    }
+    .signupform fieldset input {
+        width: 100%;
+    }
+    .widget .extendednavigation a.pull {
+        width: 35px;
+        height: 31px;
         width: 100%;
         margin: 0px auto;
         display: table;
         z-index: 9999;
-	}
-	.bk-footer .contactform input, .bk-footer .contactform textarea {
-		width:70%;
-	}
-	#textwidgetbox1 {
-		text-align:center;
-		width:100%;
-		float:none;
-		margin: 0px auto;
-		display: table;
-	}
-	.widget .extendednavigation ul {
-		position:relative;
-		z-index:9999;
-	}
-	.widget .extendednavigation ul li a {
-		padding:10px 20px;
-	}
-	.widget.profile span, .widget.profile a, .widget.profile p {
-		margin:0px auto;
-		display:table;
-	}
-	.widgetfooter .right {
-		width:100%;
-	}
-	.widgetfooter .left {
-		width:100%;
-	}
+    }
+    .bk-footer .contactform input, .bk-footer .contactform textarea {
+        width:70%;
+    }
+    #textwidgetbox1 {
+        text-align:center;
+        width:100%;
+        float:none;
+        margin: 0px auto;
+        display: table;
+    }
+    .widget .extendednavigation ul {
+        position:relative;
+        z-index:9999;
+    }
+    .widget .extendednavigation ul li a {
+        padding:10px 20px;
+    }
+    .widget.profile span, .widget.profile a, .widget.profile p {
+        margin:0px auto;
+        display:table;
+    }
+    .widgetfooter .right {
+        width:100%;
+    }
+    .widgetfooter .left {
+        width:100%;
+    }
     .widget.ecomproductslist .productlist-filter {
         width:100%;
     }
@@ -1527,9 +1527,6 @@ footer.bk-footer .widget.companyname a {
     .widget.ecomcheckout table tr td .checkout-quantitybtn button {
         width: 35px;
         height: 35px;
-    }
-    .footer-border .left, .footer-border .right {
-        text-align: center;
     }
 }	
 
