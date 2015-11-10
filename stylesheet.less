@@ -581,11 +581,13 @@ button.btn {
 	Forms
 	=============================== */
 
-.contactform fieldset {
+.contactform fieldset,
+.widget.fonectacontactform fieldset {
 	padding:20px 20px;
 }
 
-.widget.contactform fieldset {
+.widget.contactform fieldset,
+.widget.fonectacontactform fieldset {
     border: none;
     margin-bottom:20px;
     list-style: none;
@@ -651,7 +653,9 @@ label {
 input,
 .signupform fieldset input,
 .widget.contactform form fieldset textarea,
-.widget.contactform form fieldset input  {
+.widget.contactform form fieldset input,
+.fonectacontactform textarea
+{
 	background-color:transparent;
 	border:1px solid darken(@color-swatch1,15%);
     text-indent:3px;
