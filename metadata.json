@@ -1,7 +1,7 @@
 {
 	"name":"selection",
 	"thumbnail":"selection.png",
-	"screenshot":"selection.png",
+	"screenshot":"selection-screenshot.jpg",
     "templateType":"standard",
         "pageTypes": [
         "home"
