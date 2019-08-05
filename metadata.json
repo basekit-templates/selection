@@ -1,5 +1,6 @@
 {
 	"name":"selection",
+	"versionTenCompatible": 1,
 	"thumbnail":"selection.png",
 	"screenshot":"selection-screenshot.jpg",
     "templateType":"standard",
